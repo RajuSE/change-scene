@@ -1,4 +1,4 @@
-package changescene.lib.raju.dev;
+package dev.raju.lib.changescene;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

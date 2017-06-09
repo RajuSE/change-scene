@@ -1,4 +1,4 @@
-package changescene.lib.raju.dev.change_scene;
+package dev.raju.lib.changescene.change_scene;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
