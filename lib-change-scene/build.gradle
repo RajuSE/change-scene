@@ -1,5 +1,30 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'change-scene'
+
+    publishedGroupId = 'com.github.rajuse.changescene'
+    libraryName = 'change-scene'
+    artifact = 'change-scene'
+
+    libraryDescription = 'An Utility library for changing Views'
+    orgName = 'RajuSE'
+
+    siteUrl = 'https://github.com/RajuSE/change-scene'
+    gitUrl = 'https://github.com/RajuSE/change-scene.git'
+
+    libraryVersion = '0.1.0-beta'
+
+    developerId = 'RajuSE'
+    developerName = 'RajuSE'
+    developerEmail = 'email22raju@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.3"
@@ -29,3 +54,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
 }
+
+// Place it at the end of the file
+apply from: 'https://gist.githubusercontent.com/RajuSE/1817b98852cf76e3e520c231dd992890/raw/5ce864c5388361db0af3deab01d7d4858fde0899/installv1.gradle'
+apply from: 'https://gist.githubusercontent.com/RajuSE/1817b98852cf76e3e520c231dd992890/raw/5ce864c5388361db0af3deab01d7d4858fde0899/bintrayv1.gradle'
