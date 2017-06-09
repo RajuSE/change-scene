@@ -1,4 +1,4 @@
-package dev.raju.lib.changescene.change_scene;
+package dev.raju.changescene.change_scene;
 
 import org.junit.Test;
 
