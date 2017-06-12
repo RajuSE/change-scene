@@ -1,1 +1,1 @@
-include ':app', ':lib-change-scene'
+include ':app', ':change-scene'

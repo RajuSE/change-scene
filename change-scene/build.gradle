@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 
 ext {
-    bintrayRepo = 'maven'
+    bintrayRepo = 'change-scene'
     bintrayName = 'change-scene'
 
     publishedGroupId = 'com.github.rajuse.changescene'
@@ -23,6 +23,12 @@ ext {
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     allLicenses = ["Apache-2.0"]
+
+
+    /*FOR CASE#2*/
+    PUBLISH_GROUP_ID = 'com.github.rajuse.changescene'
+    PUBLISH_ARTIFACT_ID = 'change-scene'
+    PUBLISH_VERSION = '0.1.0-beta'
 }
 
 android {
@@ -56,5 +62,12 @@ dependencies {
 }
 
 // Place it at the end of the file
-apply from: 'https://gist.githubusercontent.com/RajuSE/1817b98852cf76e3e520c231dd992890/raw/5ce864c5388361db0af3deab01d7d4858fde0899/installv1.gradle'
-apply from: 'https://gist.githubusercontent.com/RajuSE/1817b98852cf76e3e520c231dd992890/raw/5ce864c5388361db0af3deab01d7d4858fde0899/bintrayv1.gradle'
+//apply from: 'https://gist.githubusercontent.com/RajuSE/1817b98852cf76e3e520c231dd992890/raw/5ce864c5388361db0af3deab01d7d4858fde0899/installv1.gradle'
+//apply from: 'https://gist.githubusercontent.com/RajuSE/1817b98852cf76e3e520c231dd992890/raw/5ce864c5388361db0af3deab01d7d4858fde0899/bintrayv1.gradle'
+
+
+// Upload Using zip into version on console CASE#2
+//apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
+// Copy the file locally and use
+apply from: 'android-release-aar.gradle'
+//Generate zip and upload  ./gradlew clean build generateRelease
