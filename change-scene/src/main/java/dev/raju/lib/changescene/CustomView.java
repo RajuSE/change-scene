@@ -12,25 +12,27 @@ public class CustomView extends RelativeLayout {
 
 
     LayoutInflater mInflater;
+
     public CustomView(Context context) {
         super(context);
         mInflater = LayoutInflater.from(context);
         init();
 
     }
-    public CustomView(Context context, AttributeSet attrs, int defStyle)
-    {
+
+    public CustomView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         mInflater = LayoutInflater.from(context);
         init();
     }
+
     public CustomView(Context context, AttributeSet attrs) {
         super(context, attrs);
         mInflater = LayoutInflater.from(context);
         init();
     }
-    public void init()
-    {
+
+    public void init() {
         View v = mInflater.inflate(R.layout.custom_view, this, true);
         TextView tv = (TextView) v.findViewById(R.id.textView1);
         tv.setText(" Custom RelativeLayout");
