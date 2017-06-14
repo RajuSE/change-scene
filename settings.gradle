@@ -1,1 +1,1 @@
-include ':app', ':change-scene'
+include ':sample', ':change-scene'
