@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progress_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progress_wheel"
+        style="?attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/progressTextScene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_wheel"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="@string/loading"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</RelativeLayout>
