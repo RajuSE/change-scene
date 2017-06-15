@@ -43,7 +43,7 @@ For example:<br>
 
 Note: `ChangeSceneLayout` is custom RelativeLayout. Hence Its easy to design your `Default-Scene`.
 
-###methods:
+### methods:
 - Change to `custom-scene`<br>
     `#changeScene(R.layout.custom_scene);`
     
@@ -64,4 +64,4 @@ Note: `ChangeSceneLayout` is custom RelativeLayout. Hence Its easy to design you
 
 
 ## Contributing
-Please report issues, PRs, suggestions.
+As always any enhancements, PRs and bug reports will be highly appreciated. :-)

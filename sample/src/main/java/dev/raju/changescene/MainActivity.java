@@ -4,6 +4,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import dev.raju.lib.changescene.ChangeSceneLayout;
@@ -15,7 +16,7 @@ import dev.raju.lib.changescene.ChangeSceneLayout;
 public class MainActivity extends AppCompatActivity {
 
     ChangeSceneLayout mScene;
-    TextView tvLoadChats;
+    Button mBtnLoadChats;
     TextView tvHome;
     TextView tvError;
 
@@ -25,11 +26,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mScene = (ChangeSceneLayout) findViewById(R.id.rootView);
-        tvLoadChats = (TextView) findViewById(R.id.tvLoadChats);
+        mBtnLoadChats = (Button) findViewById(R.id.btnLoadChats);
         tvHome = (TextView) findViewById(R.id.tvHome);
         tvError = (TextView) findViewById(R.id.tvError);
 
-        tvLoadChats.setOnClickListener(new View.OnClickListener() {
+        mBtnLoadChats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
