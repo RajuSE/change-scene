@@ -29,5 +29,5 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
 //    compile project(':change-scene')
-    compile 'com.github.rajuse.changescene:change-scene:0.1.0'
+    compile 'com.github.rajuse.changescene:change-scene:1.0.0'
 }
