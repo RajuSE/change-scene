@@ -14,7 +14,7 @@ ext {
     siteUrl = 'https://github.com/RajuSE/change-scene'
     gitUrl = 'https://github.com/RajuSE/change-scene.git'
 
-    libraryVersion = '0.1.0'
+    libraryVersion = '1.0.0'
 
     developerId = 'RajuSE'
     developerName = 'RajuSE'
@@ -28,7 +28,7 @@ ext {
     /*FOR CASE#2*/
     PUBLISH_GROUP_ID = 'com.github.rajuse.changescene'
     PUBLISH_ARTIFACT_ID = 'change-scene'
-    PUBLISH_VERSION = '0.1.0'
+    PUBLISH_VERSION = '1.0.0'
 }
 
 android {
