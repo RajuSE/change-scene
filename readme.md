@@ -7,7 +7,7 @@ is an easy to use utility to switch between different layouts without writing mu
 ## Setup
 Add __change-scene__ to your dependencies block:
 ```groovy
-    compile 'com.github.rajuse.changescene:change-scene:0.1.0'
+    compile 'com.github.rajuse.changescene:change-scene:1.0.0'
 ```
 
 
@@ -21,7 +21,7 @@ Add a `ChangeSceneLayout` to your layout just like any other view.
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         
-        <!--Your Default Scene-->
+        <!--Your Default-Scene-->
         
 </dev.raju.lib.changescene.ChangeSceneLayout>
 ```
@@ -44,24 +44,24 @@ For example:<br>
 Note: `ChangeSceneLayout` is custom RelativeLayout. Hence Its easy to design your `Default-Scene`.
 
 ### methods:
-- Change to `custom-scene`<br>
+- Change to your custom layout (`custom-scene`)<br>
     `#changeScene(R.layout.custom_scene);`
     
 - Change to `progressbar`<br>
   `#showProgressScene(String progMessage)`
   
-- Change to `default-scene`<br>
+- Change to `default-scene`(i.e. childs of `ChangeSceneLayout`)<br>
     `#showContentScene();`
   
   
 ## Benefits
 
 - Separates different states with different layouts.
-- You can provide custom layouts to be switched to.
+- You can provide custom layout to be switched to.
 - Progress-scene support for showing progress bar.
 - Boilerplate code related with view visibility/invisibility is gone.
 
 
 
 ## Contributing
-As always any enhancements, PRs and bug reports will be highly appreciated. :-)
+As always any enhancements, [PRs](https://github.com/RajuSE/change-scene/pulls) and [bugs](https://github.com/RajuSE/change-scene/issues) report will be highly appreciated. :-)
