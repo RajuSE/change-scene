@@ -1,7 +1,7 @@
 
 
 # change-scene <br>
-is an easy to use utility to switch between different layouts without writing much code.
+helps easily switch between different layouts without writing much code of View visibility. 
 
 
 ## Setup
@@ -13,7 +13,7 @@ Add __change-scene__ to your dependencies block:
 
 ## Usage
 #### ChangeSceneLayout
-Add a `ChangeSceneLayout` to your layout just like any other view.
+Add a `ChangeSceneLayout` to your layout just like any other view. Check benefits mentioned below. 
 
 ```xml
 <dev.raju.lib.changescene.ChangeSceneLayout
