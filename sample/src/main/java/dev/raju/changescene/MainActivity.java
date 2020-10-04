@@ -7,15 +7,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import dev.raju.lib.changescene.ChangeSceneConstraintLayout;
 import dev.raju.lib.changescene.ChangeSceneLayout;
+import dev.raju.lib.changescene.ChangeSceneLinearLayout;
 
-
-/*
- * Created by RajuSE on 6/14/2017.
- */
 public class MainActivity extends AppCompatActivity {
 
-    ChangeSceneLayout mScene;
+    ChangeSceneConstraintLayout mScene;
     Button mBtnLoadChats;
     TextView tvHome;
     TextView tvError;
@@ -25,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mScene = (ChangeSceneLayout) findViewById(R.id.rootView);
+        mScene = (ChangeSceneConstraintLayout) findViewById(R.id.rootView);
         mBtnLoadChats = (Button) findViewById(R.id.btnLoadChats);
         tvHome = (TextView) findViewById(R.id.tvHome);
         tvError = (TextView) findViewById(R.id.tvError);
@@ -41,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
                         mScene.changeScene(R.layout.chat_scene);
                     }
-                }, 3000);
+                }, 1500);
             }
         });
 
