@@ -7,13 +7,13 @@ helps easily switch between different layouts without writing much code of View 
 ## Setup
 Add __change-scene__ to your dependencies block:
 ```groovy
-    compile 'com.github.rajuse.changescene:change-scene:1.0.0'
+    compile 'com.github.rajuse.changescene:change-scene:1.1.0'
 ```
 
 
 ## Usage
 #### ChangeSceneLayout
-Add a `ChangeSceneLayout` to your layout just like any other view. Check benefits mentioned below. 
+Add a `ChangeSceneLayout` to your layout just like any other view.
 
 ```xml
 <dev.raju.lib.changescene.ChangeSceneLayout
@@ -41,7 +41,11 @@ For example:<br>
     </dev.raju.lib.changescene.ChangeSceneLayout>
 ```
 
-Note: `ChangeSceneLayout` is custom RelativeLayout. Hence Its easy to design your `Default-Scene`.
+To design `Default-Scene`, there are 3 options:
+`ChangeSceneLayout` is custom RelativeLayout
+`ChangeSceneConstraintLayout` is custom ConstraintLayout
+`ChangeSceneLinearLayout` is custom LinearLayout
+
 
 ### methods:
 - Change to your custom layout (`custom-scene`)<br>
